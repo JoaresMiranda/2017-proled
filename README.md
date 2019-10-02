@@ -7,3 +7,6 @@ Website created for the company PROLED in 2017
 ## Technology
 * Wordpress
 * Responsive layout
+
+## Screenshot home
+![Screenshot site](./screenshot.png)
