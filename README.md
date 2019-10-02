@@ -1,8 +1,9 @@
 # PROLED
-Site da empresa PROLED (2017)
+Website created for the company PROLED in 2017 
 
 ## Design
 * Figma
 
-## Tecnologias
+## Technology
 * Wordpress
+* Responsive layout
