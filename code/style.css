@@ -1,0 +1,96 @@
+/*
+Theme Name: PROLED 1.0
+Theme URI: http://www.proled.com.br
+Description: Tema para o site da empresa PROLED
+Version: 1.0
+Author: Joares Miranda
+*/
+
+* { margin: 0; padding: 0; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body { color: #333; font:16px 'Roboto', Sans-serif; line-height: 24px; }
+a { text-decoration: none; color: #333; cursor: pointer; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+
+.section { width: 90%; margin: 20px auto; clear: both; float: none; text-align: center; }
+.section-title { font:40px 'Roboto', Sans-serif; font-weight:100; margin-bottom: 10px; color: #713A8E; text-align:center; }
+.section-inner h3 { font-weight: 700; margin-bottom: 10px; font-size: 18px; }
+.section-inner-half { margin-bottom: 20px; }
+.section-inner-half h4 { font-size: 18px; font-weight: bold; margin: 15px 0; }
+.section-inner-half p { margin-bottom: 10px; }
+.section-inner-text p { margin-bottom: 10px; line-height: 170%; }
+.section-inner-text a { font-weight:bold; color: #713A8E; }
+.section-inner-text ol,
+.section-inner-text ul { margin-left: 25px; }
+.section-inner-text li { margin-bottom: 5px; }
+
+#header h1 { margin: 30px auto; width: 297px; height: 52px; }
+
+.menu { font-size: 16px; display: block; background-color:#9E4693; }
+.menu ul { display: none; width: 90%; text-align: left; margin: 0 auto; }
+.menu .botao.login { padding: 8px 30px; }
+.menu div { width: 90%; margin: 0 auto; position:relative; height: 35px; }
+.menu div img { position: absolute; top:5px; right: 0; }
+.menu li { list-style: none; padding-bottom: 10px; }
+.menu a { color: #FFF; }
+
+.botao { color: #FFF; border-radius:5px; padding:8px; margin: 10px 0; text-align: center; }
+.botao.login { background-color:#713A8E; color: #FFF; }
+.botao.orcamento { background-color:#9E4693; }
+.large { display:block; clear:both; width: 80%; margin: 0 auto; font-size: 18px; }
+
+#bg-hero-video { position: relative; }
+#bg-hero-video video { width: 100%; height: 100%; }
+.bloc-video { width: auto; height: auto; min-width: 100%; min-height: 100%; z-index: 1; }
+#bg-hero-video div { display: none; }
+
+.alignleft { float: left; }
+.cards { width: 90%; margin:0 auto; }
+.card-group { background-color: #F4F4F4; float: left; width: 100%; }
+.card-item { padding: 15px 0; }
+.card-item h3,
+.card-item p { margin-left: 80px; }
+
+#anuncie { background-color: #713A8E; clear: both; }
+#anuncie div { color: #FFF; position: relative; padding:20px 0; width: 90%; margin: 0 auto; }
+#anuncie h3 { font-size: 30px; font-weight:100; margin-bottom: 5px }
+#anuncie .botao.orcamento { -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25); box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25); padding: 7px 35px; position: absolute; right: 0; top: 15px; }
+
+#map { height: 550px; }
+
+#footer { clear: both; background-color:#9E4693; text-align: center; }
+#footer img { padding: 20px 0 10px 0; }
+#footer .assinatura { background-color:#713A8E; font-size: 11px; color: #FFF; }
+
+/* Responsividade */
+@media (min-width: 768px) {
+    #anuncie div { width:580px; margin: 0 auto; }
+}
+
+@media (min-width: 1024px) {
+    #header { width: 90%; margin: 10px auto; text-align: left; height: 50px; }
+    #header h1 { float: left; margin: 20px 0; }
+    .menu { float: right; margin-top: 30px; display: block; background-color: #FFF; }
+    .menu ul { display: block; width: auto; }
+    .menu li { display: inline; margin-left:18px; }
+    .menu div { display:none; }
+    .menu a { color: #333; }
+    #bg-hero-video div { position: absolute; top: 45%; left:50%; z-index: 2; margin-top: -55px; margin-left: -430px; display: block }
+    #bg-hero-video div img { max-width: 878px; max-height: 150px; }
+    #bg-hero-video div .botao.orcamento { -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25); box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25); width: 20%; display: block; margin: 10px auto; }
+    .section,
+    .cards { width:96%; max-width: 1024px; }
+    .card-item { width:30%; float: left; margin-left: 20px; }
+    .section-inner-half { width:47%; margin-left:20px; float: left; }
+    .section-inner-half:first-child,
+    .card-item:first-child { margin-left: 0; }
+}
+
+@media (min-width: 1200px) {
+    #header,
+    .section,
+    .cards { width:100%; max-width: 1200px; }
+    .section-inner-half { width:580px; }
+    .card-item { width:380px; }
+}

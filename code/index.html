@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("img.ic-menu").click(function(){
+        console.log($(window).width())
+        if ($(window).width() < 1024) {
+            $("div.menu ul").toggle();
+          }
+        });
+        $(window).resize(function(){
+          $("div.menu ul").each(function(idx, obj){
+            if ($(window).width() >= 1024) {
+              $(obj).css('display','block');
+              $("img.ic-menu").css('display', 'none');
+            } else {
+              $(obj).css('display','none');
+              $("img.ic-menu").css('display', 'block');
+            }
+          });
+        });
+      });
+      </script>
+
+    <title>PROLED</title>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="#"><img src="img/logo-proled-color.png" alt="Logo PROLED"></a></h1>
+        <div class="menu">
+            <div><img class="ic-menu" src="img/ic-menu.png"></div>
+            <ul>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#nosso-servico">Nosso serviço</a></li>
+                <li><a href="#onde-estamos">Onde estamos</a></li>
+                <li><a href="#anuncie">Anuncie</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#login" class="botao login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bg-hero-video">
+        <video muted id="hero-video" class="bloc-video" autoplay playsinline loop muted>
+            <source src="img/video/video.mp4" type="video/mp4" />
+        </video>
+        <div>
+            <img src="img/logo-proled-marca-dagua.png">
+            <a class="botao orcamento">Anuncie aqui</a>
+        </div>
+    </div>
+
+    <div id="sobre-nos" class="section">
+        <h2 class="section-title">Sobre nós</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies. Suspendisse metus leo, scelerisque sit amet mattis at, mollis at eros. Proin facilisis hendrerit lectus vitae feugiat. Aenean molestie elit dui, at iaculis purus laoreet vitae. Donec lectus velit, tincidunt non volutpat quis, semper ut leo. Vestibulum rhoncus ante commodo urna tempor egestas. Mauris accumsan urna id mauris eleifend blandit. Donec feugiat iaculis sem eu lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum urna leo, cursus scelerisque fermentum ac, laoreet in erat. Praesent a iaculis risus, vitae ultrices nunc. Praesent porta ipsum nibh, sit amet convallis quam rutrum a. Sed condimentum turpis eu nisi sollicitudin pellentesque.</p>
+    </div>
+    <div id="caracteristicas" class="card-group">
+        <div class="cards">
+            <div class="card-item">
+                <img src="img/ic-foguete.png" alt="" class="alignleft">
+                <h3>Inovação</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies.</p>
+            </div>
+            <div class="card-item">
+                <img src="img/ic-cadeado.png" alt="" class="alignleft">
+                <h3>Segurança</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies.</p>
+            </div>
+            <div class="card-item">
+                <img src="img/ic-chama.png" alt="" class="alignleft">
+                <h3>Confiança</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="anuncie">
+        <div>
+            <h3>Anuncie aqui</h3>
+            <p>Solicite a visita de nosso representante</p>
+            <a href="#" class="botao orcamento">Contato</a>
+        </div>
+    </div>
+
+    <div id="nosso-servico" class="section">
+        <h2 class="section-title">Nosso serviço</h2>        
+        <div class="section-inner-half">
+            <h4>Vantagens para o CONDOMÍNIO</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies. Suspendisse metus leo, scelerisque sit amet mattis at, mollis at eros. Proin facilisis hendrerit lectus vitae feugiat. Aenean molestie elit dui, at iaculis.</p>
+        </div>
+        <div class="section-inner-half">
+            <h4>Vantagens para o ANUNCIANTE</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum, a condimentum enim ultricies. Suspendisse metus leo, scelerisque sit amet mattis at, mollis at eros. Proin facilisis hendrerit lectus vitae feugiat. Aenean molestie elit dui, at iaculis.</p>
+        </div>
+        <a class="botao orcamento large">Solicite um orçamento</a>
+    </div>
+
+    <div id="onde-estamos" class="section-full">
+        <h2 class="section-title">Onde estamos</h2>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+              var uluru = {lat: -25.363, lng: 131.044};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Yd1ec2CCRk7LdZ4BeKudJf1iLiHWeZ8&callback=initMap">
+          </script>
+    </div>
+
+    <div id="login" class="section">
+        <div class="section-inner-half">
+            <h2 class="section-title">Espaço do síndico</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum.</p>
+            <a class="botao login large" title="Fazer login no ambiente do síndico">Login</a>
+        </div>
+        <div class="section-inner-half">
+            <h2 class="section-title">Anunciante</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tempor leo eget faucibus. Vivamus libero nisi, consequat sit amet sagittis non, blandit sit amet neque. Mauris lacinia dolor et sem bibendum.</p>
+            <a class="botao login large" title="Fazer login no ambiente do anunciante">Login</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <img src="img/logo-proled-white.png" alt="Logo PROLED">
+        <p class="assinatura">Site desenvolvido por Joares Miranda</p>
+    </div>
+</body>
+</html>
